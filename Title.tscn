@@ -1,0 +1,349 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://title background.png" type="Texture" id=1]
+[ext_resource path="res://Fonts/Adventurer.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Escape the depths.png" type="Texture" id=3]
+[ext_resource path="res://Instructions.png" type="Texture" id=4]
+[ext_resource path="res://Title.gd" type="Script" id=5]
+[ext_resource path="res://addons/8 Bit Arcade (Loop) By HeatleyBros.wav" type="AudioStream" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 90
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_bottom = 20
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 90
+outline_size = 5
+extra_spacing_bottom = 20
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 75
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_bottom = 20
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 75
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_bottom = 20
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 40
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_bottom = 20
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 40
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_bottom = 20
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 40
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_bottom = 20
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 40
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_bottom = 20
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 40
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_bottom = 20
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 40
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_bottom = 20
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 40
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_bottom = 20
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 40
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_bottom = 20
+font_data = ExtResource( 2 )
+
+[node name="Title" type="Node2D"]
+position = Vector2( -3, 0 )
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="title background" type="Sprite" parent="."]
+position = Vector2( 509.378, 301.25 )
+scale = Vector2( 1.97656, 1.35765 )
+texture = ExtResource( 1 )
+
+[node name="Escape the depths" type="Sprite" parent="."]
+position = Vector2( 513.378, 95.25 )
+scale = Vector2( 1.31332, 1.35765 )
+texture = ExtResource( 3 )
+
+[node name="Instructions" type="Sprite" parent="."]
+visible = false
+position = Vector2( 191.378, 344.25 )
+scale = Vector2( 1.56, 1.52 )
+texture = ExtResource( 4 )
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 350.0
+margin_top = 463.0
+margin_right = 650.0
+margin_bottom = 568.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StartWhite" type="Label" parent="TextureButton"]
+margin_left = -59.3981
+margin_top = 17.0227
+margin_right = 363.602
+margin_bottom = 128.023
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0.980392, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "Start"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StartBlack" type="Label" parent="TextureButton"]
+margin_left = -59.3981
+margin_top = 11.0227
+margin_right = 363.602
+margin_bottom = 122.023
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 0.980392, 1, 1 )
+text = "Start"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ControlsBlack" type="Label" parent="."]
+margin_left = 95.0
+margin_top = 176.0
+margin_right = 471.0
+margin_bottom = 272.0
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 0.980392, 1, 1 )
+text = "Controls"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ControlsWhite" type="Label" parent="."]
+margin_left = 89.0
+margin_top = 172.0
+margin_right = 465.0
+margin_bottom = 268.0
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 0.980392, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "Controls"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="JumpBlack" type="Label" parent="."]
+margin_left = 162.756
+margin_top = 273.964
+margin_right = 399.756
+margin_bottom = 333.964
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 0.980392, 1, 1 )
+text = "Jump: Space"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="JumpWhite" type="Label" parent="."]
+margin_left = 158.421
+margin_top = 270.964
+margin_right = 395.421
+margin_bottom = 330.964
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 1, 0.980392, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "Jump: Space"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RightBlack" type="Label" parent="."]
+margin_left = 163.421
+margin_top = 331.964
+margin_right = 400.421
+margin_bottom = 391.964
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 0.980392, 1, 1 )
+text = "Right: D"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RightWhite" type="Label" parent="."]
+margin_left = 158.421
+margin_top = 328.964
+margin_right = 395.421
+margin_bottom = 388.964
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 1, 0.980392, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "Right: D"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LeftBlack" type="Label" parent="."]
+margin_left = 162.421
+margin_top = 392.964
+margin_right = 399.421
+margin_bottom = 452.964
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 9 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 0.980392, 1, 1 )
+text = "Left: A"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LeftWhite" type="Label" parent="."]
+margin_left = 158.421
+margin_top = 388.964
+margin_right = 395.421
+margin_bottom = 448.964
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 1, 0.980392, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "Left: A"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title Screen Music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 6 )
+volume_db = -12.621
+autoplay = true
+
+[node name="ControlsBlack2" type="Label" parent="."]
+margin_left = 560.0
+margin_top = 176.0
+margin_right = 936.0
+margin_bottom = 272.0
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 0.980392, 1, 1 )
+text = "Best Time"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ControlsWhite2" type="Label" parent="."]
+margin_left = 554.0
+margin_top = 172.0
+margin_right = 930.0
+margin_bottom = 268.0
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 0.980392, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "Best Time"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RightBlack2" type="Label" parent="."]
+margin_left = 628.421
+margin_top = 331.964
+margin_right = 865.421
+margin_bottom = 391.964
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 11 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 0.980392, 1, 1 )
+text = "(Best Time)"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RightWhite2" type="Label" parent="."]
+margin_left = 623.421
+margin_top = 328.964
+margin_right = 860.421
+margin_bottom = 388.964
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 12 )
+custom_colors/font_color = Color( 1, 0.980392, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "(Best Time)"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

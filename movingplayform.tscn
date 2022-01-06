@@ -1,0 +1,38 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://CollisionShape2D.gd" type="Script" id=1]
+[ext_resource path="res://addons/Pixel Art Haunted Castle -by Acasas-/PNG/platform 02.png" type="Texture" id=2]
+[ext_resource path="res://addons/Pixel Art Haunted Castle -by Acasas-/PNG/platform 03.png" type="Texture" id=3]
+[ext_resource path="res://addons/Pixel Art Haunted Castle -by Acasas-/PNG/platform 01.png" type="Texture" id=4]
+[ext_resource path="res://movingplayform.gd" type="Script" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 96.5146, 18.2173 )
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+script = ExtResource( 5 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -33.5915, 1.57401 )
+frames = SubResource( 1 )
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
+position = Vector2( 30.9664, 1.57402 )
+frames = SubResource( 1 )
+
+[node name="AnimatedSprite3" type="AnimatedSprite" parent="."]
+position = Vector2( 95.5242, 1.9174 )
+frames = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 29.8752, 0.343384 )
+shape = SubResource( 2 )
+script = ExtResource( 1 )
